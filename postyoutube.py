@@ -27,6 +27,22 @@ def extract_video_id(url):
 
     raise ValueError("Not a supported YouTube URL")
 
+# Depends on yt_dlp
+def extract_youtube_title(url):
+    try:
+        import yt_dlp
+    except ModuleNotFoundError:
+        return
+    
+    ydl_opts = {
+        "quiet": True,
+        "skip_download": True,
+    }
+    
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+        print(info["title"])
+
 
 def main():
     if len(sys.argv) != 2:
@@ -36,7 +52,6 @@ def main():
     video_id = extract_video_id(sys.argv[1])
 
     now = datetime.now().astimezone()
-    #timestamp = now.isoformat(timespec="minutes")
     timestamp = now.isoformat(timespec="seconds")
 
     filename = f"{now:%Y-%m-%d-%H%M}-{video_id}.md"
@@ -57,3 +72,4 @@ draft: false
 
 if __name__ == "__main__":
     main()
+    #extract_youtube_title("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
