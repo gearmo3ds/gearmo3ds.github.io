@@ -1,7 +1,23 @@
 baseURL = 'https://gearmo3ds.github.io/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Handheld Music'
 theme = 'ananke'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  creator = 'creators'
+  console = 'consoles'
+  app = 'apps'
+
+[params]
+  recent_posts_number = 10
+
+[params.ananke]
+  show_recent_posts = true
+
+[security]
+  allowContent = ['^text/html$', '^text/plain$',  '^text/markdown$']
