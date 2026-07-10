@@ -1,9 +1,8 @@
 ---
 title: "Anbernic handhelds (various models)"
 description: "description"
-release_date: "2011"
-manufacturer: "Nintendo"
-screen: "Top: 3.53 inch 3D LCD"
+weight: 50
+thumbnail: "/images/anbernic.webp"
 ---
 
 Gameboy

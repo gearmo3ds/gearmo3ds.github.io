@@ -2,4 +2,6 @@
 title: "About"
 ---
 
-Here's a bit about me.
+Brought to you by
+- 909oh! (Doublespratt)
+- Gearmo3DS (hugo stuff)

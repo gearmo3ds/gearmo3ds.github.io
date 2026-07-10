@@ -3,7 +3,8 @@ title: "Nintendo Switch"
 description: ""
 release_date: "2011"
 manufacturer: "Nintendo"
-screen: "Top: 3.53 inch 3D LCD"
+weight: 6
+thumbnail: "/images/gadget.png"
 ---
 
 The Nintendo 3DS is a handheld game console released by Nintendo in 2011.

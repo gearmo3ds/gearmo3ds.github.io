@@ -1,9 +1,9 @@
 ---
 title: "PSP Vita (Playstation Portable)"
 description: "description"
-release_date: "2011"
 manufacturer: "Sony"
-screen: "Top: 3.53 inch 3D LCD"
+weight: 8
+thumbnail: "/images/pspvita.jpg"
 ---
 
 Gameboy

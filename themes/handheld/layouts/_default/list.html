@@ -4,17 +4,47 @@
 
 {{ .Content }}
 
-{{ range.Data.Pages }}
-<article class="post-snippet">
-  <h3>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+<div class="row justify-content-center g-4">
+  {{ range .Data.Pages }}
 
-  </h3>
-	<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-		{{ .Date.Format "January 2, 2006" }}
-	</time>
-<p>{{ .Params.summary }}</p>
-</article>
-{{ end }}
+  <article class="col-12 col-md-6 col-xl-4">
+
+
+    <div class="card bg-dark border-secondary h-100 timeline-card">
+
+      <div class="row g-0" style="margin: 10px;">
+
+
+        <!-- Thumbnail -->
+        <div class="col-md-4">
+          <img src="{{ .Params.thumbnail }}" class="img-fluid rounded-start" alt="{{ .Params.console }}" />
+        </div>
+
+        <!-- Text -->
+        <div class="col-md-4" style="margin-left: 20px;">
+
+          <!-- <div class="card-body"> -->
+          <h3>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+
+          <h5 class="card-title text-success">{{ .Params.console }}</h5>
+
+          <!-- <img src="{{ .Params.thumbnail }}"
+              class="img-fluid mb-3"
+              alt="{{ .Params.console }}" /> -->
+
+          <p class="card-text small text-body-secondary">
+            {{ .Params.summary }}
+          </p>
+          <!-- </div> -->
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  {{ end }}
+</div>
 
 {{ partial "footer.html" . }}

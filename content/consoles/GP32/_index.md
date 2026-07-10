@@ -1,9 +1,8 @@
 ---
 title: "Gamepark 32"
 description: "Old korean handheld"
-release_date: "2011"
-manufacturer: "Nintendo"
-screen: "Top: 3.53 inch 3D LCD"
+weight: 50
+thumbnail: "/images/gp32.png"
 ---
 
 bla bla bla
