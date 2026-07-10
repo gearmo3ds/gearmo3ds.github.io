@@ -1,18 +1,19 @@
-{{ partial "header.html" . }}
+{{ range (.Paginate site.RegularPages 10).Pages }}
 
-<h1>{{ .Title }}</h1>
+<div class="card mb-4">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
-{{ .Content }}
+    {{ with .Params.youtube }}
+    <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.youtube.com/embed/{{ . }}"
+            allowfullscreen>
+        </iframe>
+    </div>
+    {{ end }}
 
-{{ range.Data.Pages }}
-<article class="post-snippet">
-  <h3>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h3>
-	<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-		{{ .Date.Format "January 2, 2006" }}
-	</time>
-</article>
+    {{ .Summary }}
+
+</div>
+
 {{ end }}
-
-{{ partial "footer.html" . }}
