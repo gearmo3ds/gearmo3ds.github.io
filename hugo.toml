@@ -1,7 +1,7 @@
 baseURL = 'https://gearmo3ds.github.io/'
 locale = 'en-us'
 title = 'Handheld Music'
-theme = 'ananke'
+theme = 'handheld'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
@@ -25,18 +25,24 @@ theme = 'ananke'
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "Posts"
+    name = "Videos"
     url = "/posts"
-    weight = 10
+    weight = 30
 
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "consoles"
+    name = "Consoles"
+    url = "/consoles"
     weight = 20
 
   [[menu.main]]
-    identifier = "other"
-    name = "Other"
-    url = "/other"
-    weight = 20
+    identifier = "apps"
+    name = "Apps"
+    url = "/apps"
+    weight = 10
