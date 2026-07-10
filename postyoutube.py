@@ -63,8 +63,8 @@ def main():
 title: ""
 date: {timestamp}
 draft: false
+youtube: {video_id}
 ---
-{{{{< youtube {video_id} >}}}}
 """)
 
     print(f"Created {path}")

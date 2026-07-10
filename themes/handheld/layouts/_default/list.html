@@ -14,6 +14,14 @@
 
       <div class="row g-0" style="margin: 10px;">
 
+        {{ if .Params.youtube }}
+
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/{{ .Params.youtube }}" allowfullscreen>
+          </iframe>
+        </div>
+
+        {{ else }}
 
         <!-- Thumbnail -->
         <div class="col-md-4">
@@ -39,6 +47,8 @@
           </p>
           <!-- </div> -->
         </div>
+        {{ end }}
+
       </div>
 
     </div>
