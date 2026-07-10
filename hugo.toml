@@ -21,3 +21,22 @@ theme = 'ananke'
 
 [security]
   allowContent = ['^text/html$', '^text/plain$',  '^text/markdown$']
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "other"
+    name = "Other"
+    url = "/other"
+    weight = 20
