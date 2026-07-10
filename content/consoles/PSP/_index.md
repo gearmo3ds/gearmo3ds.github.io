@@ -1,5 +1,5 @@
 ---
-title: "PSP (Playstation Portable)"
+title: "Sony PSP"
 description: "description"
 manufacturer: "Sony"
 weight: 7

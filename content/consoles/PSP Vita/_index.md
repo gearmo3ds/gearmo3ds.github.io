@@ -1,5 +1,5 @@
 ---
-title: "PSP Vita (Playstation Portable)"
+title: "Sony PSP Vita"
 description: "description"
 manufacturer: "Sony"
 weight: 8
