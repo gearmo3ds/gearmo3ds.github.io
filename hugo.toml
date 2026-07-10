@@ -33,7 +33,7 @@ theme = 'handheld'
     identifier = "about"
     name = "About"
     url = "/about"
-    weight = 40
+    weight = 50
 
   [[menu.main]]
     identifier = "consoles"
@@ -46,3 +46,9 @@ theme = 'handheld'
     name = "Apps"
     url = "/apps"
     weight = 10
+
+  [[menu.main]]
+    identifier = "creators"
+    name = "Creators"
+    url = "/creators"
+    weight = 40
